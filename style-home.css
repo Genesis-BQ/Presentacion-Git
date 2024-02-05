@@ -1,0 +1,51 @@
+body{
+    background: #eeaad7;
+}
+
+.titulo-principal{
+    padding-left: 30px;
+}
+
+#Tulipanes{
+    width: 100%;
+}
+
+.principal{
+    padding: 20px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+    
+}
+
+p{
+    text-align: center;
+}
+
+em strong{
+    color: red;
+}
+
+#frase{
+  font-size: 20px;  
+}
+
+.datos{
+    padding: 30px;
+}
+
+.items{
+    font-style: italic;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagenDatos{
+    width: 50%;
+}

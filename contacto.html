@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Tulip Flower</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="Imagenes/logos.png" alt="Logo de la Tulip Flower" width="190" height="190"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tipos.html">Tipos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="formulario">
+            <form action="/validar" method="post">
+                <label for="nombre_apellido"> Nombre y Apellido </label>
+                <input type="text" id="nombre_apellido" name="nombreapellido" class="input-padrom" required>
+            
+                <label for="correoelectronico"> Correo Electrónico </label>
+                <input type="email" id="correoe_lectronico" name="correoelectronico" class="input-padrom" required placeholder="email@dominio.com">
+            
+                <label for="telefono"> Teléfono </label>
+                <input type="tel" id="telefono" name="telefono" class="input-padrom" required placeholder="(xx) xxxx xxxx">
+            
+                <label for="mensaje"> Mensaje </label>
+                <textarea id="mensaje" name="mensaje" cols="70" rows="10" class="input-padrom" required></textarea>
+            
+                <fieldset>
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="contacto_preferido"> Email </label>
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="contacto_preferido"> Telefóno </label>
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="contacto_preferido" checked> Whatsapp </label>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>¿En cuál horario prefiere ser atendido?</legend>
+                    <select id="horario_preferido" name="horario_preferido">
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+            
+                <label class="checkbox" id="recibir_novedades"><input type="checkbox" name="recibir_novedades" checked> ¿Le gustaría recibir novedades de Tulip Flower?</label>
+            
+                <input type="submit" value="Enviar formulario" class="enviar">
+            </form>
+            
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+        <footer>
+                <img src="Imagenes/logo-blanco.png"  width="190" height="190">
+                <p class="copyright">&copy Copyright Tulip Flower - 2024</p>
+        </footer>
+    </body>
+
+</html>
